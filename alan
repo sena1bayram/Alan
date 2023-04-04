@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int r, a;
+        double alan;
+        System.out.println("Yarıçap giriniz: ");
+        r = input.nextInt();
+        System.out.println("Merkez açı ölçüsünü giriniz: ");
+        a = input.nextInt();
+        if (a < 0 || a > 360) {
+            System.out.println("hatalı değer girdiniz");
+        }
+        alan = (3.14 * (r * r) * a) / 360;
+        System.out.println("Alan: " + alan);
+    }
+}
